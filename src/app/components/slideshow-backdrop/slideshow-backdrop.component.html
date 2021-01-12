@@ -1,0 +1,9 @@
+<ion-slides mode="ios" [options]="slidesOpts">
+  <ion-slide *ngFor="let movie of movies | filter">
+
+    <ion-card (click)="showDetail(movie.id)">
+      <img [src]="movie.backdrop_path | imagen" alt="">
+    </ion-card>
+
+  </ion-slide>
+</ion-slides>
